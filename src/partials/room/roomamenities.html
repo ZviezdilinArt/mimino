@@ -1,0 +1,172 @@
+<section class="section-amnities">
+  <div class="container">
+    <h2 class="amnities-title">ЗРУЧНОСТІ У НОМЕРІ</h2>
+
+    <ul class="amn-list list">
+      <li class="amn-item">
+        <p class="amn-p unical">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </li>
+      <li class="amn-item">
+        <h3 class="amn-title">ЗАГАЛЬНІ</h3>
+        <div class="amn-paragraf">
+          <p class="amn-p first">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <p class="amn-p">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </li>
+      <li class="amn-item">
+        <h3 class="amn-title">ВАННА КІМНАТА</h3>
+        <div class="amn-paragraf">
+          <p class="amn-p first">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <p class="amn-p">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </li>
+      <li class="amn-item">
+        <h3 class="amn-title">СПАЛЬНЯ</h3>
+        <p class="amn-p">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint.
+        </p>
+      </li>
+      <li class="amn-item">
+        <h3 class="amn-title">КУХНЯ</h3>
+        <div class="amn-paragraf">
+          <p class="amn-p first">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <p class="amn-p">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+        </div>
+      </li>
+      <li class="amn-item">
+        <h3 class="amn-title">МЕДІА</h3>
+        <p class="amn-p">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </li>
+    </ul>
+
+    <button type="button" class="open-booking" data-modal-open>
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+
+    <a href="./hotel.html" class="amn-link"
+      >Повернутися до перегляду номерів
+      <svg class="arrow">
+        <use
+          href="./images/svg/sprite.svg#icon-arrow-right"
+          width="23"
+          height="13"
+        ></use>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Modal -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-amn">
+    <button type="button" class="close-window-amn" data-modal-close>
+      <svg class="close-modal-amn" width="18px" height="18px">
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form-amn">
+      <b class="modal-title">ЗАБРОНЮВАТИ НОМЕР</b>
+      <div class="modal-kind">
+        <div class="use-info">
+          <label class="mf-label">
+            <input
+              type="text"
+              name="user-name"
+              class="mf-input"
+              placeholder="Ваше ім’я"
+              required
+              minlength="3"
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            />
+            <span class="mf-desk">На кого забронювати номер?</span>
+          </label>
+
+          <label class="mf-label">
+            <input
+              type="tel"
+              name="user-phone"
+              class="mf-input"
+              placeholder="+38 (___) ___-__-__"
+              required
+              pattern="[+38] [([0-9]{3})] [0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="+38 (xxx) xxx-xx-xx"
+            />
+            <span class="mf-desk">Номер телефону</span>
+          </label>
+        </div>
+
+        <label for="room9" class="mf-label">
+          <span class="use-room">
+            <select name="room" id="room9" class="mf-input mf-select kind-room">
+              <option class="selection" value="3s">Трьохмісний номер</option>
+              <option class="selection" value="2s">Двомісний номер</option>
+              <option class="selection" value="2l">Двомісний люкс</option>
+            </select>
+
+            <span class="mf-desk">Категорія номеру</span>
+          </span>
+        </label>
+
+        <div class="use-info">
+          <label for="arrival9" class="mf-label">
+            <input
+              type="date"
+              id="arrival9"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата заїзду</span>
+          </label>
+          <label for="departure9" class="mf-label">
+            <input
+              type="date"
+              id="departure9"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата виїзду</span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="mf-button">ОФОРМИТИ&nbsp;БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>

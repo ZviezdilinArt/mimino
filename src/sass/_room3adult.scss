@@ -1,0 +1,162 @@
+.hotel-roomlux.three {
+  background-color: #f0ecd6;
+}
+
+.hotel-about-text-content.three {
+  text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-room-part-one.three {
+    margin-bottom: 169px;
+  }
+}
+
+.hotel-about-logo.three {
+  display: block;
+  margin-left: auto;
+  width: 202px;
+}
+
+.hotel-about-room-block.three {
+  margin-left: auto;
+}
+
+.hotel-about-room-img.three {
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-about-room-img.three {
+    position: absolute;
+    top: -94px;
+    left: 112px;
+
+    width: 400px;
+    height: 524px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel-about-room-img.three {
+    top: -105px;
+    left: 180px;
+
+    width: 460px;
+    height: 574px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel-about-buttons.three {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+}
+
+/**********************SLIDER********************/
+
+@media screen and (max-width: 1023px) {
+  .slider-three {
+    display: flex;
+    flex-direction: column;
+
+    width: 236px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-three {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.swiper.three {
+  margin-bottom: 75px;
+  margin-right: 0px;
+
+  width: 194px;
+  height: 194px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper.three {
+    margin: 0px;
+    width: 428px;
+    height: 194px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper.three {
+    width: 548px;
+    height: 254px;
+  }
+}
+
+.swiper-button-prev.three {
+  top: auto !important;
+  bottom: 132px;
+  left: 301px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px !important;
+  height: 32px !important;
+
+  color: #000000 !important;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-prev.three {
+    bottom: -64px;
+    left: 548px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-prev.three {
+    bottom: -72px;
+    left: 647px !important;
+  }
+}
+
+.swiper-button-next.three {
+  top: auto !important;
+  bottom: 132px;
+  right: 17px !important;
+
+  width: 32px !important;
+  height: 32px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000 !important;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-next.three {
+    bottom: -64px;
+    left: 612px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-next.three {
+    bottom: -72px;
+    left: 711px !important;
+  }
+}

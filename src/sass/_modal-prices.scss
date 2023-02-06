@@ -1,0 +1,248 @@
+.backdrop-prices {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+  backdrop-filter: blur(4px);
+
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-prices.is-hidden {
+  visibility: hidden;
+  scale: 0.5;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-prices {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: #fffdee;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 414px) {
+  .modal-prices {
+    width: 414px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-prices {
+    width: 712px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.close-window-prices {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: #fffdee;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-window-prices:hover,
+.close-window-prices:focus {
+  color: #f3c653;
+}
+
+.modal-prices-close-icon {
+  fill: currentColor;
+}
+
+.modal-prices-title {
+  margin-bottom: 40px;
+
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-prices-title {
+    font-size: 32px;
+    line-height: 1.16;
+  }
+}
+
+.modal-prices-room-name {
+  margin-bottom: 28px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.prices-selected-room {
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+
+.prices-select {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 13px 15px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #808080;
+
+  background-color: #fffdee;
+  border: 1px solid #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .prices-select {
+    max-width: 288px;
+  }
+}
+
+.prices-label {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 15px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .prices-label {
+    margin-bottom: 0px;
+  }
+}
+
+.price-out {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 13px 15px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #808080;
+  border: 1px solid #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-out {
+    width: 288px;
+  }
+}
+
+.currency {
+  display: block;
+  padding-left: 15px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+
+.modal-prices-button {
+  display: block;
+  width: 100%;
+  padding: 20px 64px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 414px) {
+  .modal-prices-button {
+    width: 384px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-prices-button {
+    width: 592px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.modal-prices-button:hover,
+.modal-prices-button:focus {
+  color: #000000;
+  background-color: #f3c653;
+}
+
+.prices-input {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .prices-input {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    margin-bottom: 40px;
+  }
+}

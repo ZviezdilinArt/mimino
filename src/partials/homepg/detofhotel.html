@@ -1,0 +1,214 @@
+<section class="det-hotel">
+  <div class="container">
+    <div class="hotel-content">
+      <p class="hotel-logo">MIMIHO</p>
+      <h2 class="hotel-content-title">Готель</h2>
+      <p class="hotel-content-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="hotel-wrap">
+      <div class="hotel-slider-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_1-pc.jpg    1x,
+              /src/images/homepage/section4/section4_1-pc@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_1-tablet.jpg    1x,
+              /src/images/homepage/section4/section4_1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_1-mob.jpg    1x,
+              /src/images/homepage/section4/section4_1-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+
+          <img
+            src="/src/images/homepage/section4/section4_1-mob.jpg"
+            alt="номер"
+          />
+        </picture>
+      </div>
+
+      <div class="hotel-slider-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_2-pc.jpg    1x,
+              /src/images/homepage/section4/section4_2-pc@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_2-tablet.jpg    1x,
+              /src/images/homepage/section4/section4_2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_2-tablet.jpg    1x,
+              /src/images/homepage/section4/section4_2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+
+          <img
+            src="/src/images/homepage/section4/section4_2-tablet.jpg"
+            alt="сніданок"
+          />
+        </picture>
+      </div>
+      <div class="hotel-slider-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_3-pc.jpg    1x,
+              /src/images/homepage/section4/section4_3-pc@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_3-tablet.jpg    1x,
+              /src/images/homepage/section4/section4_3-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              /src/images/homepage/section4/section4_1-tablet.jpg    1x,
+              /src/images/homepage/section4/section4_1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+
+          <img
+            src="/src/images/homepage/section4/section4_1-tablet.jpg"
+            alt="гість"
+          />
+        </picture>
+      </div>
+      <div class="hotel-btns">
+        <button
+          class="det-hotel-btn reserve-room"
+          type="button"
+          data-modal-open-2
+        >
+          Забронювати номер
+        </button>
+        <a class="det-hotel-btn link" href="../src/hotel.html"
+          >Переглянути ціни</a
+        >
+      </div>
+    </div>
+    <div class="buttons-section4">
+      <div class="button-prev">
+        <svg class="button-prev-icon" width="32px" height="32px">
+          <use href="../src/images/svg/sprite.svg#icon-left"></use>
+        </svg>
+      </div>
+      <div class="button-next">
+        <svg class="button-next-icon" width="32px" height="32px">
+          <use href="../src/images/svg/sprite.svg#icon-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-----------------------------------Modal-room ----------------------------------->
+<div class="backdrop is-hidden" data-modal-2>
+  <div class="modal-amn">
+    <button type="button" class="close-window-amn" data-modal-close-2>
+      <svg class="close-modal-amn" width="18px" height="18px">
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form-amn">
+      <b class="modal-title">ЗАБРОНЮВАТИ НОМЕР</b>
+      <div class="modal-kind">
+        <div class="use-info">
+          <label class="mf-label">
+            <input
+              type="text"
+              name="user-name"
+              class="mf-input"
+              placeholder="Ваше ім’я"
+              required
+              minlength="3"
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            />
+            <span class="mf-desk">На кого забронювати номер?</span>
+          </label>
+
+          <label class="mf-label">
+            <input
+              type="tel"
+              name="user-phone"
+              class="mf-input"
+              placeholder="+38 (___) ___-__-__"
+              required
+              pattern="[+38] [([0-9]{3})] [0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="+38 (xxx) xxx-xx-xx"
+            />
+            <span class="mf-desk">Номер телефону</span>
+          </label>
+        </div>
+
+        <label for="room1" class="mf-label">
+          <span class="use-room">
+            <select name="room" id="room1" class="mf-input mf-select kind-room">
+              <option class="selection" value="3s">Трьохмісний номер</option>
+              <option class="selection" value="2s">Двомісний номер</option>
+              <option class="selection" value="2l">Двомісний люкс</option>
+            </select>
+
+            <span class="mf-desk">Категорія номеру</span>
+          </span>
+        </label>
+
+        <div class="use-info">
+          <label for="arrival1" class="mf-label">
+            <input
+              type="date"
+              id="arrival1"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата заїзду</span>
+          </label>
+          <label for="departure1" class="mf-label">
+            <input
+              type="date"
+              id="departure1"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата виїзду</span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="mf-button">ОФОРМИТИ&nbsp;БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
+<!-----------------------------------Modal-room ----------------------------------->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino-home</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/favicons/favicon-mimino.png"
+    />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <!--SLIDER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!--SLIDER-->
+    <script type="module" src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/homepg/herohome.html"></include>
+      <include src="./partials/homepg/aboutrest.html"></include>
+      <include src="./partials/homepg/detofrest.html"></include>
+      <include src="./partials/homepg/abouthotel.html"></include>
+      <include src="./partials/homepg/detofhotel.html"></include>
+      <include src="./partials/homepg/contacts.html"></include>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+    <!-- MODAL -->
+    <script src="./js/modal-room.js"></script>
+    <script src="./js/modal-table.js"></script>
+    <!-- MODAL -->
+
+    <!--SLIDER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <!--SLIDER-->
+  </body>
+</html>

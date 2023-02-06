@@ -1,0 +1,222 @@
+<section class="hero-rest hero-section">
+  <div class="container hero-container">
+    <h1 class="herohome-title">MIMIHO</h1>
+    <p class="hero-undertitle">Ресторан</p>
+    <p class="hero-second-undertitle">смак життя 24/7</p>
+    <div class="hero-map">
+      <svg class="hero-icon-map" width="20px" height="20px">
+        <use href="../src/images/svg/sprite.svg#icon-map"></use>
+      </svg>
+      <a
+        class="adress-link link"
+        href="https://goo.gl/maps/KEZZjsuZYziko3p98"
+        target="_blank"
+      >
+        Україна, м. Полтава,<br />
+        вул. Маршала Бірюзова, 15</a
+      >
+    </div>
+    <div class="hero-btn-container">
+      <ul class="hero-btn-list list">
+        <li class="hero-btn-item">
+          <button class="herohome-btn" type="button" data-modal-open-table>
+            Забронювати столик
+          </button>
+        </li>
+        <li class="hero-btn-item">
+          <button class="herohome-btn" type="button" data-modal-open-1>
+            Забронювати номер
+          </button>
+        </li>
+      </ul>
+    </div>
+    <ul class="hero-social-list list">
+      <li class="hero-social-item">
+        <a
+          class="hero-icon-link"
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <svg class="hero-social-icon" width="24" height="24">
+            <use href="../src/images/svg/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="hero-social-item">
+        <a
+          class="hero-icon-link"
+          href="https://www.facebook.com/"
+          target="_blank"
+        >
+          <svg class="hero-social-icon" width="24" height="24">
+            <use href="../src/images/svg/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="hero-social-item">
+        <a
+          class="hero-icon-link"
+          href="https://web.telegram.org/"
+          target="_blank"
+        >
+          <svg class="hero-social-icon" width="24" height="24">
+            <use href="../src/images/svg/sprite.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-----------------------------------Modal-table ----------------------------------->
+<div class="backdrop-table is-hidden" data-modal-table>
+  <div class="modal-table">
+    <button class="modal-table-btn" data-modal-close-table>
+      <svg class="modal-icon" width="24" height="24">
+        <use href="../src/images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="table-order-form" name="order_form">
+      <strong class="order-form-appeal">ЗАБРОНЮВАТИ СТОЛИК</strong>
+      <div class="table-form-group" role="group">
+        <label class="tableorder-form-field">
+          <input
+            class="tableorder-form-input"
+            type="text"
+            name="user_name"
+            required
+            minlength="4"
+            pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            placeholder="Ваше ім’я"
+          />
+          <span class="order-form-label">На кого забронювати столик?</span>
+        </label>
+
+        <label class="tableorder-form-field" for="amount-person">
+          <select class="tableorder-form-input" name="amount" required>
+            <option class="amount-order" value="2" selected>2</option>
+            <option class="amount-order" value="3">3</option>
+            <option class="amount-order" value="4">4</option>
+            <option class="amount-order" value="5">5</option>
+          </select>
+          <span class="order-form-label">Столик на яку кількість осіб?</span>
+        </label>
+
+        <label class="tableorder-form-field">
+          <input
+            class="tableorder-form-input"
+            type="tel"
+            name="user_phone"
+            required
+            minlength="6"
+            pattern="[+38] [([0-9]{3})] [0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="+38 (___) ___-__-__"
+          />
+          <span class="order-form-label">Номер телефону</span>
+        </label>
+
+        <label class="tableorder-form-field">
+          <input
+            class="tableorder-form-input"
+            type="date"
+            value="2023-02-01"
+            min="2023-01-01"
+            max="2024-01-01"
+          />
+          <span class="order-form-label">На яку дату бронювати?</span>
+        </label>
+        <div class="form-table-send">
+          <button class="formtable-send-btn" type="submit">
+            оформити бронювання
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-----------------------------------Modal-table ----------------------------------->
+
+<!-----------------------------------Modal-room ----------------------------------->
+<div class="backdrop is-hidden" data-modal-1>
+  <div class="modal-amn">
+    <button type="button" class="close-window-amn" data-modal-close-1>
+      <svg class="close-modal-amn" width="18px" height="18px">
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form-amn">
+      <b class="modal-title">ЗАБРОНЮВАТИ НОМЕР</b>
+      <div class="modal-kind">
+        <div class="use-info">
+          <label class="mf-label">
+            <input
+              type="text"
+              name="user-name"
+              class="mf-input"
+              placeholder="Ваше ім’я"
+              required
+              minlength="3"
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            />
+            <span class="mf-desk">На кого забронювати номер?</span>
+          </label>
+
+          <label class="mf-label">
+            <input
+              type="tel"
+              name="user-phone"
+              class="mf-input"
+              placeholder="+38 (___) ___-__-__"
+              required
+              pattern="[+38] [([0-9]{3})] [0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="+38 (xxx) xxx-xx-xx"
+            />
+            <span class="mf-desk">Номер телефону</span>
+          </label>
+        </div>
+
+        <label for="room2" class="mf-label">
+          <span class="use-room">
+            <select name="room" id="room2" class="mf-input mf-select kind-room">
+              <option class="selection" value="3s">Трьохмісний номер</option>
+              <option class="selection" value="2s">Двомісний номер</option>
+              <option class="selection" value="2l">Двомісний люкс</option>
+            </select>
+
+            <span class="mf-desk">Категорія номеру</span>
+          </span>
+        </label>
+
+        <div class="use-info">
+          <label for="arrival2" class="mf-label">
+            <input
+              type="date"
+              id="arrival2"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата заїзду</span>
+          </label>
+          <label for="departure2" class="mf-label">
+            <input
+              type="date"
+              id="departure2"
+              name="trip-start"
+              class="mf-input mf-select kalendar"
+              value="2023-02-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <span class="mf-desk">Дата виїзду</span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="mf-button">ОФОРМИТИ&nbsp;БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
+<!-----------------------------------Modal-room ----------------------------------->

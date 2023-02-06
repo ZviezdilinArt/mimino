@@ -1,0 +1,351 @@
+.about-hotel {
+  padding-top: 18px;
+  padding-bottom: 72px;
+
+  background-color: #fffdee;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel {
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel {
+    padding-bottom: 197px;
+  }
+}
+
+.about-hotel .container {
+  position: relative;
+}
+
+.about-hotel-uppertitle {
+  margin-bottom: 6px;
+
+  text-align: right;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-uppertitle {
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.16;
+  }
+}
+
+.about-hotel-logo {
+  width: 127px;
+  margin-left: auto;
+  margin-bottom: 16px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-logo {
+    width: 204px;
+    margin-bottom: 24px;
+
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-logo {
+    width: 202px;
+  }
+}
+
+.about-hotel-top {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-top {
+    margin-bottom: 142px;
+  }
+}
+
+.about-hotel-top-desc {
+  margin-left: auto;
+  max-width: 242px;
+  margin-bottom: 28px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-top-desc {
+    margin-bottom: 0px;
+    max-width: 419px;
+
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-top-desc {
+    max-width: 488px;
+  }
+}
+
+.about-hotel-top-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-top-img {
+    position: absolute;
+    top: -144px;
+    left: 112px;
+
+    width: 400px;
+    height: 524px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-top-img {
+    left: 180px;
+
+    width: 460px;
+    height: 574px;
+  }
+}
+
+.about-hotel-bottom {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 414px) {
+  .about-hotel-bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-bottom {
+    justify-content: flex-end;
+    column-gap: 48px;
+
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-bottom {
+    align-items: flex-end;
+    column-gap: 45px;
+  }
+}
+
+.about-hotel-bottom-desc {
+  margin-left: auto;
+  max-width: 242px;
+  margin-bottom: 28px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+
+@media screen and (min-width: 414px) {
+  .about-hotel-bottom-desc {
+    max-width: 163px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-bottom-desc {
+    max-width: 312px;
+
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-bottom-desc {
+    max-width: 311px;
+    padding-bottom: 283px;
+  }
+}
+
+.about-hotel-bottom-img {
+  margin-right: auto;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 414px) {
+  .about-hotel-bottom-img {
+    margin: 0;
+  }
+}
+
+/*.about-hotel-slider-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}*/
+
+@media screen and (min-width: 1024px) {
+  .about-hotel-slider-img {
+    width: 194px;
+    height: 194px;
+
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-hotel-slider-img {
+    width: 254px;
+    height: 254px;
+  }
+}
+
+/**********************SLIDER********************/
+.swiper.about-hotel-slider {
+  width: 245px;
+  height: 245px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper.about-hotel-slider {
+    position: absolute !important;
+    bottom: -166px;
+    left: 47px;
+
+    width: 428px;
+    height: 194px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper.about-hotel-slider {
+    bottom: -75px;
+    left: 85px;
+
+    width: 548px;
+    height: 254px;
+  }
+}
+
+.swiper-button-prev.about-hotel-slider {
+  top: auto !important;
+  bottom: -52px;
+  left: 15px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px !important;
+  height: 32px !important;
+
+  color: #000000 !important;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-prev.about-hotel-slider {
+    bottom: -230px;
+    left: 47px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-prev.about-hotel-slider {
+    bottom: -147px;
+    left: 85px !important;
+  }
+}
+
+.swiper-button-next.about-hotel-slider {
+  top: auto !important;
+  bottom: -52px;
+  left: 79px !important;
+
+  width: 32px !important;
+  height: 32px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000 !important;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-next.about-hotel-slider {
+    bottom: -230px;
+    left: 111px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-button-next.about-hotel-slider {
+    bottom: -147px;
+    left: 149px !important;
+  }
+}
+
+.swiper-button-prev-icon,
+.swiper-button-next-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  color: #f3c653 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '' !important;
+}
+
+/*@media screen and (min-width: 1024px) {
+  .swiper-slide.swiper-slide-active {
+    width: 234px !important;
+  }
+}*/
+
+/*.swiper-slide.swiper-slide-duplicate.swiper-slide-next.swiper-slide-duplicate-prev {
+  width: 234px !important;
+}*/
