@@ -1,0 +1,2 @@
+function multiply(){var e;e=1e3*document.getElementById("nights-quantity").value,document.getElementById("outprice").innerHTML=e}function room3(){var e;e=1500*document.getElementById("nights-quantity-3").value,document.getElementById("outprice3").innerHTML=e}function price(){var e;e=750*document.getElementById("nights-quantity-2").value,document.getElementById("outprice2").innerHTML=e}
+//# sourceMappingURL=hotel.dcb84af9.js.map
